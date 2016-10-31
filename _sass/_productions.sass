@@ -1,0 +1,29 @@
+.production
+  margin-bottom: $spacing-unit * 3
+  +clearfix
+
+  .sponsor
+    float: right
+    p
+      margin: 0
+
+.production-image
+  display: block
+  margin: auto
+
+  +breakpoint($large)
+    float: left
+    padding-right: 1em
+    max-width: 60%
+
+.production-title
+  font-size: $base-font-size
+  font-size: 2em
+
+.production-title-standalone
+  @extend .production-title
+  margin: 0.25em auto
+
+.production
+  .description
+    margin-top: $spacing-unit

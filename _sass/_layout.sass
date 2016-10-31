@@ -1,0 +1,233 @@
+/**
+ * Prevent horizontal scrolling with full width bars
+ */
+html, body 
+  overflow-x: hidden
+
+html
+  box-sizing: border-box
+
+*, *:before, *:after 
+  box-sizing: inherit
+
+h2
+  margin-top: $spacing-unit * 2
+
+h2:first-child
+  margin-top: 0
+
+body
+  padding: 0
+
+  +breakpoint($large)
+    font-size: 1.2em
+
+.content-width
+  padding-left: $body-padding
+  padding-right: $body-padding
+  max-width: 650px
+  margin-left: auto
+  margin-right: auto
+
+  +breakpoint($large)
+    max-width: 900px
+
+
+.page-content
+  @extend .content-width
+
+// Header
+header.site-header
+  .pre-nav
+    +clearfix
+
+  img
+    width: 100%
+    max-width: 730px
+    display: block
+    margin: auto
+  a, a:hover
+    text-decoration: none
+    color: $text-color
+  
+  .site-title 
+    +breakpoint($large)
+      display: block
+      float: left
+      width: 70%
+
+    h1
+      display: block
+      display: none
+      color: #444
+      text-align: center
+      padding: 0.2em
+      font-size: $base-font-size
+      font-size: 2.6em
+      font-weight: 100
+      line-height: 1em
+      
+      +breakpoint($medium)
+        color: #fff
+        font-size: 4em
+        position: absolute
+        bottom: 0
+        right: 0
+      
+      +breakpoint($large)
+        font-size: 5em
+
+  h2.site-description
+    font-weight: 100
+    font-size: 1.35em
+    text-align: center
+    display: none
+    margin-top: 0
+    margin-bottom: $spacing-unit / 2
+    +breakpoint($medium)
+      display: block
+
+  .get-tickets
+    font-weight: normal
+    margin: auto
+    margin-bottom: 2em
+    text-align: center
+
+    +breakpoint($large)
+      float: left
+      margin: auto
+      margin-top: 5em
+
+    form
+      display: inline-block
+      +breakpoint($large)
+        display: block
+
+    a
+      color: $article-link
+      text-decoration: underline
+      
+      &:hover
+        color: $article-link-hover
+
+
+
+
+// Main Nav
+
+.js .site-nav ul
+  display: none
+  +breakpoint($medium)
+    display: block
+
+.site-nav
+  font-size: $base-font-size
+  text-align: center
+  margin-bottom: $spacing-unit
+  font-weight: 100
+  
+  ul
+    +container()
+    padding: 0
+    margin: 0
+    list-style: none
+    background-color: $subtle-bg-alt
+
+  label, li
+    font-size: 1.3em
+    display: block
+
+  label, li a
+    display: block
+    padding: 8px
+    background-color: $subtle-bg-alt
+
+    &, &:link, &:hover, &:visited
+      color: $text-color
+
+
+    &:hover
+      background-color: $subtle-bg
+
+  +breakpoint($medium)
+    label
+      display: none
+    li
+      +span(2)
+    li:nth-of-type(2n)
+      +span(2 at 3)
+
+  +breakpoint($large)
+    li
+      display: inline !important
+      float: none !important
+      margin: auto !important
+
+      a
+        width: 10em !important
+        display: inline-block !important
+
+// Articles
+
+article
+  margin: $spacing-unit auto
+
+  & > h2
+    text-align: center
+
+.post-link
+  text-decoration: none
+  color: $text-color
+
+  &.outgoing
+    text-decoration: underline
+
+.post-meta
+  display: inline
+  margin-right: 2em
+  color: lighten($main-text, 70)
+
+// Image Display
+img
+  max-width: 100%
+.picture
+  margin-bottom: $spacing-unit
+
+  img
+    display: block
+    margin: auto
+  .caption
+    text-align: center
+
+// misc
+
+.call-out
+  background-color: $subtle-bg
+  padding: 18px
+  margin-bottom: $spacing-unit
+
+  & > :last-child
+    margin-bottom: 0
+
++breakpoint($large)
+  .featured-pictures
+    +pie-clearfix
+
+    .picture
+      +span(3 of 6)
+
+      &:nth-of-type(even)
+        +span(3 of 6 at 4)
+
+      &:nth-of-type(odd)
+        clear: both
+
+.audition-notice
+  background-color: $subtle-bg
+  padding: 18px
+  margin: $spacing-unit auto
+  
+  h4
+    font-weight: bold
+    margin-bottom: 0
+    font-size: 1.3em

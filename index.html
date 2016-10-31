@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="group">
+
+    <div class="full">
+    {% assign posts = site.posts | where:"featured","true" %}
+    {% for post in posts %}
+      <h2 style="font-weight: bold; font-family: azo-sans-uber">
+        {{ post.title }}
+      </h2>
+      <article class="post-content">
+        {% if post.excerpt %}
+          {{ post.excerpt }}
+        {% else %}
+          {{ post.content }}
+        {% endif %}
+      </article>
+    {% endfor %}
+    </div>
+
+    <div class="donations">
+      <a href="{{ site.baseurl }}/donate/"><img src="{{ site.baseurl }}/images/perennials/donations.jpg" alt="Your donations make all the difference!"></a>
+    </div>
+
+    <a href="http://eepurl.com/7iIeH" name="mailer" class="a-wrap mail">
+      <h3 class="post-link">Join our mailing list</h3>
+      <p>Stay informed about what's happening at Post Playhouse. </p>
+    </a>
+
+    <div id="mailer">
+      <div class="modal">
+        <a class="close">close</a><a class="close">close</a>
+        {% include mailing-list.html %}
+      </div>
+    </div>
+    
+    <div class="stay-connected">
+      <h3>Stay connected with Post</h3>
+      <a href="http://facebook.com/post.playhouse"><img src="{{ site.baseurl }}/images/facebook-logo.svg" alt=""></a>
+      <a href="http://twitter.com/postplayhouse"><img src="{{ site.baseurl }}/images/twitter-bird.svg" alt=""></a>
+      <p></p>
+    </div>
+    
+    {% for post in site.posts limit:0 offset:1 %}
+      <a class="a-wrap recent" href="{{ post.url | prepend: site.baseurl }}">
+        <h3 class="post-link">
+          {{ post.title }}
+        </h3>
+        {% if post.image %}
+          <img class="preview" src="{{ post.image | prepend: site.baseurl }}">
+        {% endif %}
+        <p>{{ post.excerpt | strip_html | markdownify }}</p>
+      </a>
+    {% endfor %}
+  
+  </div>
+
+  <div class="featured-pictures">
+    <div class="picture">
+      <img src="{{ site.baseurl }}/images/2014/guys-and-dolls-don-paige.jpg" alt="">
+      <div class="caption">Paige Salter and Don Denton in 2014's <em>Guys &amp; Dolls</em></div>
+    </div>
+    <div class="picture">
+      <img src="{{ site.baseurl }}/images/2014/sound-of-music-maria-children.jpg" alt="">
+      <div class="caption">Samantha Matthews as Maria with the Von Trapp children in 2014's <em>The Sound of Music</em></div>
+    </div>
+    <div class="picture">
+      <img src="{{ site.baseurl }}/images/2013/drowsy-chaperone-show-off.jpg" alt="">
+      <div class="caption"><em>The Drowsy Chaperone</em> from our 2013 season</div>
+    </div>
+    <div class="picture">
+      <img src="{{ site.baseurl }}/images/2010/spelling-bee-stephen-randy.jpg" alt="">
+      <div class="caption">Stephen Anthony and Randy Dierkes in 2010's <em>The 25th Annual Putnam County Spelling Bee</em></div>
+    </div>
+  </div>
+</div>
