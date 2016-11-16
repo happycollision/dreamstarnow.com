@@ -1,22 +1,22 @@
 $main-text: #142614;
 $main-bg: #fff;
 
-$subtle-bg: $greenish-grey;
-$subtle-bg-alt: darken($greenish-grey, 10%);
+$subtle-bg: lighten(blue, 30%);
+$subtle-bg-alt: darken(blue, 10%);
 $subtle-border: darken($subtle-bg, 10%);
-$button: $bright-green;
+$button: blue;
 $button-tint: darken($button, 10%);
 $button-hover: lighten($button,15%);
 $button-hover-tint: lighten($button-tint,15%);
 $button-edge: darken($button-tint, 10%);
 
-$pop-bg: $dark-green;
+$pop-bg: darken(blue, 10%);
 $pop-bg-text: #fff;
 
 $subtle-bg-subtle-text: #686758;
 
 
-$article-link: $garrish-green;
+$article-link: blue;
 $article-link-visited: darken($article-link, 10%);
 $article-link-hover: #ea9629;
 $pop-bg-link: #e6402a;

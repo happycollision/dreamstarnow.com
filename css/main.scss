@@ -8,20 +8,9 @@ $baseurl: "{{ site.baseurl }}";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "includes",
-        
-        "base",
-        "layout",
-        "resume",
-        "form-elements",
-        "footer",
-        "calendar",
-        "ticket-page",
-        "productions",
-        "bios",
-        "share-buttons",
-        "mailing-list",
-        "home-page",
-        "spotlight-series",
-        "plan-your-visit"
+	"includes",
+	"base",
+	"layout",
+	"form-elements",
+	"footer"
 ;
