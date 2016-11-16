@@ -2,27 +2,26 @@ season: "2016"
 casting_complete: true
 
 # Site settings
-title: Post Playhouse
-email: don@happycollision.com
-twitter: postplayhouse
-facebook: post.playhouse
+title: Dreamstar Productions
+email: TomGoodall@Dreamstarnow.com
+twitter: dreamstarnow
+facebook: Dreamstarnow
 description: >
-  Post Playhouse, Inc. is Northwestern Nebraska's favorite live theatre company, producing several musicals running in a repertory schedule every summer by bringing together highly skilled creative professionals from across the country and nearby. Post Playhouse, Inc. mounts its productions at the theatre in Fort Robinson State Park.
+  Dreamstar Productions LLC, doing business as Dreamstar Dance, is a dance competition that was created to provide the highest quality experience to each and every studio, teacher, performer, and family.
 baseurl: ""
-url: "http://postplayhouse.com" # the base hostname & protocol for your site
+url: "http://www.dreamstarnow.com" # the base hostname & protocol for your site
 
 # Build settings
 permalink: /news/:year/:month/:day/:title/
-excerpt_separator: <!--more-->
 
 exclude:
   - .bowerrc
   - .gitignore
   - bower.json
   
-timezone:       US/Mountain
+timezone:       US/Central
 locale:         en_us
-icon:           /images/post-playhouse-logo.png
+icon:           /images/dreamstar-logo.png
 
 defaults:
   -
