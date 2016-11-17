@@ -5,11 +5,20 @@ layout: default
 <div class="home">
 
   <div class="group">
+  
+    <h1>Dreamstar Dance Competitions and Classes</h1>
+    
+    <img class="welcome-message-image"
+      src="{{ site.baseurl }}images/DES14-Dancer.jpg"
+      alt="Dancer posing during competition" />
+    
+    {% capture welcome %}{% include_relative _welcome-message.md %}{% endcapture %}
+    {{ welcome | markdownify }}
 
     <div class="full">
     {% assign posts = site.posts | where:"featured","true" %}
     {% for post in posts %}
-      <h2 style="font-weight: bold; font-family: azo-sans-uber">
+      <h2>
         {{ post.title }}
       </h2>
       <article class="post-content">
