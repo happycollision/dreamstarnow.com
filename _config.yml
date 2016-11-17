@@ -20,10 +20,28 @@ timezone:       US/Central
 locale:         en_us
 icon:           /images/dreamstar-logo.png
 
+collections:
+  #adding an underscore so the resulting folder will have 2 underscores
+  _editable_pages:
+    output: true
+    permalink: /:path/
+
 defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
-      share: true
+      layout: post
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: "_editable_pages"
+    values:
+      layout: page

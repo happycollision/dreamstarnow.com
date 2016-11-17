@@ -1,5 +1,6 @@
 <ul>
-{% assign pages_list = site.pages | sort: "order", "last" %}
-{% assign group = 'main' %}
+{% assign collection = site.collections | where: "label", "_editable_pages" | first %}
+{% assign pages_list = collection.docs | sort: "order", "last" %}
+{% assign nav_group = 'main' %}
 {% include pages_list.html %}  
 </ul>

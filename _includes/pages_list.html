@@ -3,7 +3,7 @@
   {% if node.nav_title == null %}
     {% assign nav_title = node.title %}
   {% endif %}
-  {% if group == null or group == node.group %}
+  {% if nav_group == null or nav_group == node.nav_group %}
     {% if page.url == node.url %}
       <li class="active"><a href="{{ node.url | prepend: site.baseurl }}" class="active">{{nav_title}}</a></li>
     {% else %}
@@ -12,4 +12,4 @@
   {% endif %}
 {% endfor %}
 {% assign pages_list = nil %}
-{% assign group = nil %}
+{% assign nav_group = nil %}

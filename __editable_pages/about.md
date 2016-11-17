@@ -1,8 +1,6 @@
 ---
-layout: page
 title: About
-permalink: /about/
-group: main
+nav_group: main
 order: 1
 ---
 About Dreamstar
