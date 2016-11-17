@@ -1,0 +1,59 @@
+// Header
+header.site-header
+  background-color: $base-brand-color
+  .pre-nav
+    +clearfix
+
+  img
+    width: 100%
+    max-width: 730px
+    display: block
+    margin: auto
+  a, a:hover
+    text-decoration: none
+    color: $text-color
+  
+  .site-title 
+    +breakpoint($medium)
+      display: block
+      float: left
+      width: 60%
+
+    h1
+      display: block
+      display: none
+      color: #444
+      text-align: center
+      padding: 0.2em
+      font-size: $base-font-size
+      font-size: 2.6em
+      font-weight: 100
+      line-height: 1em
+      
+      +breakpoint($medium)
+        color: #fff
+        font-size: 4em
+        position: absolute
+        bottom: 0
+        right: 0
+      
+      +breakpoint($large)
+        font-size: 5em
+
+  .register-button
+    font-weight: normal
+    margin: auto
+    margin-bottom: 2em
+    text-align: center
+
+    +breakpoint($large)
+      float: left
+      margin: auto
+      margin-top: 5em
+
+    form
+      display: inline-block
+      +breakpoint($large)
+        display: block
+    button
+      +button

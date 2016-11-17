@@ -7,10 +7,6 @@ $subtle-bg: desaturate(lighten($base-brand-color, 50%), 30%);
 $subtle-bg-alt: lighten($subtle-bg, 20%);
 $button: $base-brand-color;
 $button-text: #fff;
-$button-tint: darken($button, 10%);
-$button-hover: lighten($button,15%);
-$button-hover-tint: lighten($button-tint,15%);
-$button-edge: darken($button-tint, 10%);
 
 $subtle-bg-subtle-text: #686758;
 

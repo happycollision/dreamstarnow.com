@@ -1,0 +1,43 @@
+@mixin button(
+  $text: $button-text,
+  $main: $button,
+  $tint: null,
+  $edge: null,
+  $main-hover: null,
+  $tint-hover: null) {
+  
+  @if ($tint == null)       { $tint:       darken($main, 10%); }
+  @if ($edge == null)       { $edge:       darken($tint, 10%); }
+  @if ($main-hover == null) { $main-hover: lighten($main, 15%); }
+  @if ($tint-hover == null) { $tint-hover: lighten($tint, 15%); }
+  
+  & {
+    background: $main; /* Old browsers */
+    background: -webkit-linear-gradient(top, $main 0%, $tint 100%); /* Chrome 10+, Safari 5.1+ */
+    background:   linear-gradient(to bottom, $main 0%, $tint 100%); /* W3C */
+    border: none;
+    border-bottom: 3px solid $edge;
+    border-radius: 2px;
+    color: $text;
+    display: inline-block;
+    padding: 11px 24px 10px;
+    text-decoration: none;
+    font-size: 100%;
+  }
+
+  &:hover, &:focus {
+    background: $main-hover; /* Old browsers */
+    background: -webkit-linear-gradient(top, $main-hover 0%, $tint-hover 100%); /* Chrome 10+, Safari 5.1+ */
+    background:   linear-gradient(to bottom, $main-hover 0%, $tint-hover 100%); /* W3C */
+    outline: none;
+  }
+
+  &:active {
+    background: $tint; /* Old browsers */
+    background: -webkit-linear-gradient(top, $tint 0%, $main 100%); /* Chrome 10+, Safari 5.1+ */
+    background:   linear-gradient(to bottom, $tint 0%, $main 100%); /* W3C */
+    border: none;
+    border-top: 3px solid transparent;
+    padding: 10px 24px 11px;
+  }
+}

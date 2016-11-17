@@ -11,6 +11,20 @@ $baseurl: "{{ site.baseurl }}";
 	"includes",
 	"base",
 	"layout",
-	"form-elements",
+  "header",
 	"footer"
 ;
+
+.welcome-message-image {
+  float: left;
+  max-height: 300px;
+  margin: 0 20px 20px 0;
+  display: none;
+  
+  @include breakpoint($medium) {
+    display: inline;
+  }
+  @include breakpoint($large) {
+    max-height: 400px;
+  }
+}
