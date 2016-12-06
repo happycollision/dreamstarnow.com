@@ -1,6 +1,16 @@
 <ul>
-{% assign collection = site.collections | where: "label", "_editable_pages" | first %}
-{% assign pages_list = collection.docs | sort: "order", "last" %}
-{% assign nav_group = 'main' %}
-{% include pages_list.html %}  
+  {% assign editable_pages_collection = site.collections | where: "label", "_editable_pages" | first %}
+
+  {% assign pages_list = "" | split: "|" %}
+
+  {% for page in editable_pages_collection.docs %}
+    {% assign pages_list = pages_list | push: page %}
+  {% endfor %}
+
+  {% for regpage in site.pages | where: "nav_group", "main" %}
+    {% assign pages_list = pages_list | push: regpage %}
+  {% endfor %}
+
+  {% assign nav_group = 'main' %}
+  {% include pages_list.html %}
 </ul>

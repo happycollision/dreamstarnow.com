@@ -1,0 +1,31 @@
+---
+layout: page
+nav_group: main
+order: 2
+title: Staff
+---
+
+{% comment %}
+
+NOTE: This document is not meant to be edited below this point.
+
+If you would like to change this page's position in the main site navigation,
+change the `order` number above.
+
+If you would like to change a bio please do so by editing the appropriate
+document in the `_bios` folder.
+
+{% endcomment %}
+
+<div class="bios">{% for bio in site.bios %}
+  <article class="bio">
+    {% if bio.image %}
+      <img src="{{ bio.image }}" alt="headshot of {{ bio.name }}"/>
+    {% endif %}
+    <header>
+      <h1 class="bio-name">{{ bio.name }}</h1>
+      <h2 class="bio-position">{{ bio.position }}</h2>
+    </header>
+    <div class="bio-content">{{ bio.content }}</div>
+  </article>
+{% endfor %}</div>

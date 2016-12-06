@@ -25,6 +25,8 @@ collections:
   _editable_pages:
     output: true
     permalink: /:path/
+  bios:
+    output: false
 
 defaults:
   -
