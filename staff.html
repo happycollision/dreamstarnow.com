@@ -20,7 +20,7 @@ document in the `_bios` folder.
 <div class="bios">{% for bio in site.bios %}
   <article class="bio">
     {% if bio.image %}
-      <img src="{{ bio.image }}" alt="headshot of {{ bio.name }}"/>
+      <img class="bio-image" src="{{ bio.image }}" alt="headshot of {{ bio.name }}"/>
     {% endif %}
     <header>
       <h1 class="bio-name">{{ bio.name }}</h1>

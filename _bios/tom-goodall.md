@@ -1,6 +1,7 @@
 ---
 name: Tom Goodall
 position: Co-Owner & Event Coordinator
+image: /images/bio-images/tom-goodall.jpg
 ---
 
 Tom has 25 years of experience in theatrical staging, technical and artistic design and direction for high school, community and professional productions. He has worked with dance companies including the Joffery Ballet, the Bill Blass Dance Company, and Dance Co-Motion. Tom was honored to provide the scenic design and technical direction for the Miss. Iowa competition for 15 years. Five high school productions for which he did the scenic design and technical directing were selected to be presented on the main stage at the international thespian conference. 

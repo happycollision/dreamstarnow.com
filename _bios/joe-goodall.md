@@ -1,6 +1,7 @@
 ---
 name: Joe Goodall
 position: Co-Owner & Executive Director
+image: /images/bio-images/joe-goodall.jpg
 ---
 
 Joe is a graduate of St. Ambrose University in Davenport, IA. While at SAU he completed a Bachelors Degree majoring in Theatre & Theatre Education. During his college years he was active in the community working for Davenport North High School, as the Technical Director for the theatre department, as well as working for countless dance companies as light designer for their recitals.

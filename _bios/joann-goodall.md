@@ -1,6 +1,7 @@
 ---
 name: JoAnn Goodall
 position: Service Coordinator & Merchandiser
+image: /images/bio-images/joann-goodall.jpg
 ---
 
 JoAnn is pleased to bring her organizational skills and caring spirit to the Dreamstar organization. She is a registered nurse with over 20 years experience in both hospital and home care nursing. She has also worked in the area of healthcare quality and hopes to incorporate quality practices into this business.
