@@ -17,6 +17,8 @@ document in the `_bios` folder.
 
 {% endcomment %}
 
+<link rel="stylesheet" href="{{ "/css/bios.css" | prepend: site.baseurl }}?v={{ site.style_version }}">
+
 <div class="bios">{% for bio in site.bios %}
   <article class="bio">
     {% if bio.image %}
