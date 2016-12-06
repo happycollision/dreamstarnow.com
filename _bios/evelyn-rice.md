@@ -1,5 +1,6 @@
 ---
-name: Evelyn Rice
+first_name: Evelyn
+last_name: Rice
 position: Competition Judge / Master Class Instructor
 image: /images/bio-images/evelyn-rice-wells.jpg
 ---

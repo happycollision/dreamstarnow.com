@@ -1,5 +1,6 @@
 ---
-name: Joe Goodall
+first_name: Joe
+last_name: Goodall
 position: Co-Owner & Executive Director
 image: /images/bio-images/joe-goodall.jpg
 ---

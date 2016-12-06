@@ -1,5 +1,6 @@
 ---
-name: Briony Schroeder
+first_name: Briony
+last_name: Schroeder
 position: Consultant
 image: /images/bio-images/briony-schroeder.jpg
 ---

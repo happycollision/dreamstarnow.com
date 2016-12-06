@@ -1,5 +1,6 @@
 ---
-name: JoAnn Goodall
+first_name: JoAnn
+last_name: Goodall
 position: Service Coordinator & Merchandiser
 image: /images/bio-images/joann-goodall.jpg
 ---

@@ -1,5 +1,6 @@
 ---
-name: Jennifer Haws
+first_name: Jennifer
+last_name: Haws
 position: Competition Judge
 image: /images/bio-images/jennifer-haws.jpg
 ---

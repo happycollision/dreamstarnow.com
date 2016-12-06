@@ -1,5 +1,6 @@
 ---
-name: Tom Goodall
+first_name: Tom
+last_name: Goodall
 position: Co-Owner & Event Coordinator
 image: /images/bio-images/tom-goodall.jpg
 ---

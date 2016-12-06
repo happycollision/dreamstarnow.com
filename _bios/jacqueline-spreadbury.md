@@ -1,5 +1,6 @@
 ---
-name: Jacqueline Spreadbury
+first_name: Jacqueline
+last_name: Spreadbury
 position: Competition Judge / Master Class Instructor
 image: /images/bio-images/jacqueline-spreadbury.jpg
 ---
