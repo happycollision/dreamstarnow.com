@@ -3,6 +3,18 @@ title: Dreamstar Rules and Registration
 nav_group: main
 nav_title: Rules
 order: 3
+
+inner_links:
+  - Age Groups
+  - Competition Levels
+  - Entry Divisions
+  - Performance Categories
+  - Non-Performance Categories
+  - Time Limits
+  - Registration
+  - Scoring
+  - Awards
+
 ---
 
 ## Competition Acceptance
@@ -205,9 +217,10 @@ Be sure to check in with the Dreamstar Stage Manager no less than 5 numbers ahea
 
 Dreamstar assigns each studio/school with a dressing area. Please respect each other’s belongings and space. See a Dreamstar staff member for assistance in locating your assigned area.
 
-### Awards
+### Awards Ceremonies
 
 All participants are welcome on stage during awards ceremonies. For groups and lines, please designate a “captain” to accept the award. The captain should know the entry number, name of the routine and number of performers in the group.
+
 A minimum of 6 entries in each age group and level must be received in order for cash awards to be presented. All award money will be presented to the studio. Dreamstar gift certificates will be presented to the top score soloist.
 
 ### Video and photography
