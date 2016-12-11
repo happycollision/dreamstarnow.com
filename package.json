@@ -1,33 +1,24 @@
 {
-  "name": "jekyll.postplayhouse.com",
+  "name": "dreamstarnow.com",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
-  "dependencies": {},
-  "devDependencies": {
-    "concurrent-transform": "^1.0.0",
-    "del": "^2.2.0",
+  "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-cached": "^1.1.0",
-    "gulp-imageoptim": "^1.0.3",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-newer": "^1.1.0",
-    "gulp-remember": "^0.3.0",
-    "gulp-responsive": "^2.2.0",
-    "run-sequence": "^1.1.5",
-    "sharp": "^0.13.1"
+    "turbolinks": "^5.0.0"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/happycollision/jekyll.postplayhouse.com.git"
+    "url": "git+https://github.com/happycollision/dreamstarnow.com.git"
   },
-  "author": "",
+  "author": "HappyCollision",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/happycollision/jekyll.postplayhouse.com/issues"
+    "url": "https://github.com/happycollision/dreamstarnow.com/issues"
   },
-  "homepage": "https://github.com/happycollision/jekyll.postplayhouse.com#readme"
+  "homepage": "https://github.com/happycollision/dreamstarnow.com#readme"
 }
