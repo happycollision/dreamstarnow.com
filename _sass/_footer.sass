@@ -25,11 +25,15 @@
     @extend %clearfix
     @extend %content-width
     
+    .email-address, .usps-address, .phone-numbers
+      margin-top: $spacing-unit
+    
     +breakpoint($medium)
-      address
-        float: left
-        width: 50%
-      .phone-numbers, .email-address
-        float: right
+      .usps-address, .email-address
         clear: right
+        float: right
+        width: 50%
+      .phone-numbers
+        float: left
+        clear: left
         width: 50%
