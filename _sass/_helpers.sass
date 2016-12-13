@@ -1,19 +1,13 @@
-=bars-setup
-  content: ""
-  background-color: inherit
-  position: absolute
-  top: 0
-  bottom: 0
-  width: 9999px
+%content-width
+  padding-left: $body-padding
+  padding-right: $body-padding
+  max-width: 650px
+  margin-left: auto
+  margin-right: auto
 
-=fw-bars
-  position: relative
-  &:before 
-    +bars-setup
-    left: -9999px
-  &:after 
-    +bars-setup
-    right: -9999px
+  +breakpoint($large)
+    max-width: 900px
+
       
 .group, .wrapper
   +pie-clearfix

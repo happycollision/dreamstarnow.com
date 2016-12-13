@@ -41,3 +41,24 @@
     padding: 10px 24px 11px;
   }
 }
+
+@mixin bars-setup {
+  content: "";
+  background-color: inherit;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+}
+
+@mixin fw-bars {
+  position: relative;
+  &:before {
+    @include bars-setup;
+    left: -9999px;
+  }
+  &:after {
+    @include bars-setup;
+    right: -9999px;
+  }
+}
