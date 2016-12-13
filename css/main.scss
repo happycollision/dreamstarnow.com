@@ -11,7 +11,10 @@ $baseurl: "{{ site.baseurl }}";
 	"includes",
 	"base",
 	"layout",
-  "header",
+  
+	// individual liquid file styles
+	"layout-default",
+	"header",
   "main-nav",
 	"footer"
 ;

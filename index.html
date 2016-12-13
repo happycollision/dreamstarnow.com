@@ -2,26 +2,25 @@
 layout: default
 ---
 <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}?v={{ site.style_version }}">
-<div class="home">
 
-  <div class="group">
+<div class="dreamstar-file-index">
+
+  <h1>Dreamstar Dance Competitions and Classes</h1>
   
-    <h1>Dreamstar Dance Competitions and Classes</h1>
-    
-    <img class="welcome-message-image"
-      src="{{ site.baseurl }}images/DES14-Dancer.jpg"
-      alt="Dancer posing during competition" />
-    
-    {% capture welcome %}{% include_relative _welcome-message.md %}{% endcapture %}
-    {{ welcome | markdownify }}
+  <img class="welcome-message-image"
+    src="{{ site.baseurl }}images/DES14-Dancer.jpg"
+    alt="Dancer posing during competition" />
+  
+  {% capture welcome %}{% include_relative _welcome-message.md %}{% endcapture %}
+  {{ welcome | markdownify }}
 
-    {% if site.data.registration.open %}
-      <div class="registration-call-to-action">
-        <a class="register" href="{{ site.data.registration.url }}">Register Now</a>
-      </div>
-    {% endif %}
+  {% if site.data.registration.open %}
+    <div class="registration-call-to-action">
+      <a class="register" href="{{ site.data.registration.url }}">Register Now</a>
+    </div>
+  {% endif %}
 
-    <div class="full">
+  <div class="full">
     {% assign posts = site.posts | where:"featured","true" %}
     {% for post in posts %}
       <h2>
@@ -31,8 +30,6 @@ layout: default
         {{ post.content }}
       </article>
     {% endfor %}
-    </div>
-
   </div>
 
 </div>

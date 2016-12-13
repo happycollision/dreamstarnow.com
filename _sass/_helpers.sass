@@ -8,20 +8,10 @@
   +breakpoint($large)
     max-width: 900px
 
-      
-.group, .wrapper
+%clearfix
   +pie-clearfix
 
-.no-break
-  white-space: nowrap
-
-.clear
-  clear: both
-
-.center
-  text-align: center
-
-.switcher
+%switcher
   border: 1px solid $article-link
   border-radius: 3px
   display: inline-block
@@ -43,7 +33,7 @@
     background-color: $article-link
     color: $main-bg
 
-.captioned-image
+%captioned-image
   background-color: $subtle-bg
   padding: 8px
   margin: 20px
@@ -55,40 +45,3 @@
     text-align: center
     +breakpoint($large)
       font-size: 0.75em
-
-+breakpoint($large)
-  .six
-    width: 49%
-  .four
-    width: 32%
-  .three
-    width: 25%
-
-.outlined
-  background-color: $subtle-bg
-  padding: 8px
-  
-.right
-  float: right
-  margin-right: 0
-
-.left
-  float: left
-  margin-left: 0
-
-+breakpoint(0 ($large - 1))
-  .left, .right
-    &.six, &.four, &.three
-      float: none
-
-.captioned-image.six
-  &.left, &.right
-    +breakpoint(0 ($large - 1))
-      float: none
-      margin-left: auto
-      margin-right: auto
-
-.blue-button
-  +button(#fff)
-.white-button
-  +button($base-brand-color, #fff)

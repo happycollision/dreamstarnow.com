@@ -1,12 +1,10 @@
-/**
- * Prevent horizontal scrolling with full width bars
- */
 html, body 
+  // Prevent horizontal scrolling with full width bars
   overflow-x: hidden
 
+// proper box sizing
 html
   box-sizing: border-box
-
 *, *:before, *:after 
   box-sizing: inherit
 
@@ -21,9 +19,6 @@ body
 
   +breakpoint($large)
     font-size: 1.2em
-
-.page-content, .content-width
-  @extend %content-width
 
 
 

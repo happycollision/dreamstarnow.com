@@ -10,6 +10,7 @@
   +fw-bars
 
   .site-description
+    @extend %content-width
     font-weight: normal
 
   .credits
@@ -19,3 +20,16 @@
     a:link, a:visited, a
       &:hover, &
         text-decoration: underline
+
+  .contact-info
+    @extend %clearfix
+    @extend %content-width
+    
+    +breakpoint($medium)
+      address
+        float: left
+        width: 50%
+      .phone-numbers, .email-address
+        float: right
+        clear: right
+        width: 50%
