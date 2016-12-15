@@ -11,6 +11,7 @@ url: "http://www.dreamstarnow.com" # the base hostname & protocol for your site
 # Build settings
 style_version: 1 # for browser caching
 permalink: /news/:year/:month/:day/:title/
+future: true
 
 exclude:
   - .bowerrc
@@ -26,6 +27,9 @@ collections:
   _editable_pages:
     output: true
     permalink: /:path/
+  competitions:
+    output: true
+    permalink: /competitions/:year/:month/:title/
   bios:
     output: false
 
@@ -48,3 +52,9 @@ defaults:
       type: "_editable_pages"
     values:
       layout: page
+  -
+    scope:
+      path: ""
+      type: "competitions"
+    values:
+      layout: competition

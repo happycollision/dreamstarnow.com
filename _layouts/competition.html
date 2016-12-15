@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="ds-LayoutsCompetition">
+
+  <header class="ds-LayoutsCompetition-header">
+    <h1 class="ds-LayoutsCompetition-title">{{ page.title }}, {{ page.start_date | date:"%Y"}}</h1>
+  </header>
+  
+  <article class="ds-LayoutsCompetition-body">
+    
+    {% capture nowunix %}{{site.time | date: '%s'}}{% endcapture %}
+    {% capture posttime %}{{page.end_date | date: '%s'}}{% endcapture %}
+    {% if nowunix <= posttime %}
+      <div class="ds-LayoutsCompetition-preEventInfo">
+        <div class="ds-LayoutsCompetition-dates">
+          {{ page.start_date | date:"%b %-d, %Y"}} through {{ page.end_date | date:"%b %-d, %Y"}}
+        </div>
+        
+        <div class="ds-LayoutsCompetition-locationContainer">
+          <h2 class="ds-LayoutsCompetition-locationTitle">Location</h2>
+          <div class="ds-LayoutsCompetition-locationAddress">
+            {{ page.competition_address | newline_to_br }}
+          </div>
+        </div>
+        
+        <div class="ds-LayoutsCompetition-hotelContainer">
+          <h2 class="ds-LayoutsCompetition-hotelTitle">Hotel Information</h2>
+          <div class="ds-LayoutsCompetition-hotelAddress">
+            {{ page.hotel_address | newline_to_br }}
+          </div>
+          <div class="ds-LayoutsCompetition-hotelPhone">
+            Phone: {{ page.hotel_phone }}
+          </div>
+
+          {% if page.discount_is_available %}
+          <div class="ds-LayoutsCompetition-hotelDiscount">
+            (Mention <strong>Dreamstar</strong> to recieve a discounted rate)
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  
+    <div class="ds-LayoutsCompetition-content">
+      {{ content }}
+    </div>
+  </article>
+
+</div>
