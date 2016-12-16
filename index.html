@@ -21,7 +21,8 @@ layout: default
   {% endif %}
   
   <div class="ds-Index-competitionsList">
-    {% include competitions_list.html %}
+    {% assign competitions = site.competitions %}
+    {% include _list_competitions.html %}
   </div>
 
   <div class="full">
