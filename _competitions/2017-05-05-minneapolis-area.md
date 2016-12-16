@@ -21,5 +21,3 @@ hotel_phone: 952-831-1012
 
 discount_is_available: true
 ---
-
-This competition is going to be awesome.
