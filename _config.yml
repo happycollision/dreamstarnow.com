@@ -17,6 +17,10 @@ exclude:
   - .bowerrc
   - .gitignore
   - bower.json
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package.json
   
 timezone:       US/Central
 locale:         en_us
