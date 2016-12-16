@@ -19,6 +19,10 @@ layout: default
       <a class="register" href="{{ site.data.registration.url }}">Register Now</a>
     </div>
   {% endif %}
+  
+  <div class="ds-Index-competitionsList">
+    {% include competitions_list.html %}
+  </div>
 
   <div class="full">
     {% assign posts = site.posts | where:"featured","true" %}
