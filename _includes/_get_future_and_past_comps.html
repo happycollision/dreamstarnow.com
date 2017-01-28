@@ -6,7 +6,7 @@
   {% if comp_date > unix_time %}
     {% assign future_comps = future_comps | push: comp %}
   {% else %}
-    {% assign past_comps = past_comps | push: comp %}
+    {% assign past_comps = past_comps | unshift: comp %}
   {% endif %}
 {% endfor %}
 
