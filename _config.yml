@@ -5,8 +5,14 @@ twitter: dreamstarnow
 facebook: Dreamstarnow
 description: >
   Dreamstar Productions LLC, doing business as Dreamstar Dance, is a dance competition that was created to provide the highest quality experience to each and every studio, teacher, performer, and family.
+
+# After transferring to production domain
+# url: "http://www.dreamstarnow.com" # the base hostname & protocol for your site
+# baseurl: ""
+
+# While at the testing domain
+url: "https://happycollision.github.io" # the base hostname & protocol for your site
 baseurl: "/dreamstarnow.com"
-url: "http://www.dreamstarnow.com" # the base hostname & protocol for your site
 
 # Build settings
 style_version: 1 # for browser caching
