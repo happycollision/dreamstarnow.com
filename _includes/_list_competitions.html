@@ -1,16 +1,23 @@
 {% if include.competitions.size > 0 %}
 
-  <ul class="ds-IncludesCompetitionsList">
+  <ul class="ds-IncludesListCompetitions">
     {% for competition in include.competitions %}
-      {% assign start = competition.start_date | date: "%b %-d" %}
-      {% assign end = competition.end_date | date: "%-d" %}
+      {% assign month = competition.start_date | date: "%b" %}
+      {% assign start_day = competition.start_date | date: "%-d" %}
+      {% assign end_day = competition.end_date | date: "%-d" %}
       {% assign year = competition.end_date | date: "%Y" %}
-      <li class="ds-IncludesCompetitionsList-competition">
-        <a href="{{ competition.url }}" class="ds-IncludesCompetitionsList-title"> {{ competition.title }} </a>
-        <div class="ds-IncludesCompetitionsList-dates"> {{ start }} - {{ end }}, {{ year }} </div>
+      {% if start_day == end_day %}
+        {% assign range = start_day %}
+      {% else %}
+        {% capture range %}{{ start_day }} - {{ end_day }}{% endcapture %}
+      {% endif %}
+      <li class="ds-IncludesListCompetitions-competition">
+        <a href="{{ competition.url }}" class="ds-IncludesListCompetitions-title"> {{ competition.title }} </a>
+        <div class="ds-IncludesListCompetitions-dates">
+          {{ month }} {{ range }}, {{ year }}
+        </div>
       </li>
     {% endfor %}
   </ul>
 
 {% endif %}
-{% assign competitions = nil %}
