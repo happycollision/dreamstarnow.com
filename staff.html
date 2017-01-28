@@ -17,19 +17,17 @@ document in the `_bios` folder.
 
 {% endcomment %}
 
-<link rel="stylesheet" href="{{ "/css/bios.css" | prepend: site.baseurl }}?v={{ site.style_version }}">
-
 {% assign bios = site.bios | sort: 'last_name' %}
 
-<div class="bios">{% for bio in bios %}
-  <article class="bio">
+<div class="ds-Staff">{% for bio in bios %}
+  <article class="ds-Staff-bio">
     {% if bio.image %}
-      <img class="bio-image" src="{{ bio.image | prepend: site.baseurl }}" alt="headshot of {{ bio.name }}"/>
+      <img class="ds-Staff-image" src="{{ bio.image | prepend: site.baseurl }}" alt="headshot of {{ bio.name }}"/>
     {% endif %}
     <header>
-      <h1 class="bio-name">{{ bio.first_name }} {{ bio.last_name }}</h1>
-      <h2 class="bio-position">{{ bio.position }}</h2>
+      <h1 class="ds-Staff-name">{{ bio.first_name }} {{ bio.last_name }}</h1>
+      <h2 class="ds-Staff-position">{{ bio.position }}</h2>
     </header>
-    <div class="bio-content">{{ bio.content }}</div>
+    <div class="ds-Staff-content">{{ bio.content }}</div>
   </article>
 {% endfor %}</div>

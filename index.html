@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}?v={{ site.style_version }}">
-
-<div class="dreamstar-file-index">
+<div class="ds-Index">
 
   <h1>Dreamstar Dance Competitions and Classes</h1>
   
@@ -20,7 +18,7 @@ layout: default
     </div>
   {% endif %}
   
-  {% include competitions_list.html %}
+  {% include all_competitions_list.html %}
 
   <div class="full">
     {% assign posts = site.posts | where:"featured","true" %}
