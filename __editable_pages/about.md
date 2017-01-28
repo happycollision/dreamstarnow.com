@@ -18,3 +18,11 @@ Dreamstar Dance exists to improve self-esteem, poise, and confidence of dance st
 * Improve the level of regional dance by providing educational and practical experience opportunities
 * Foster dedication, discipline, and appreciation of teamwork
 * Fulfill the dream of the dancer to “shine” on stage
+
+## Newsletter & Brochure
+
+Consider subscribing to [our email newsletter][eml],
+or downloading our [latest brochure][brch].
+
+[eml]: http://eepurl.com/e1dzk
+[brch]: {{ site.baseurl }}/documents/Dreamstar-Brochure-2015.pdf
