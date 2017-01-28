@@ -5,7 +5,7 @@ twitter: dreamstarnow
 facebook: Dreamstarnow
 description: >
   Dreamstar Productions LLC, doing business as Dreamstar Dance, is a dance competition that was created to provide the highest quality experience to each and every studio, teacher, performer, and family.
-baseurl: ""
+baseurl: "/dreamstarnow.com"
 url: "http://www.dreamstarnow.com" # the base hostname & protocol for your site
 
 # Build settings
