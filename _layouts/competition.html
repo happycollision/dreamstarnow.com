@@ -41,7 +41,12 @@ layout: default
         </div>
       </div>
     {% else %}
-      {% include jquery_include.html %}
+      {% comment %}
+        {% include jquery_include.html %}
+        <script type="text/javascript" src="{{ site.baseurl }}/js/old-lightbox.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/old-galleria.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/old-galleria.facebook.js"></script>
+      {% endcomment %}
     {% endif %}
   
     <div class="ds-LayoutsCompetition-content">
