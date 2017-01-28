@@ -1,7 +1,7 @@
-{% if competitions.size > 0 %}
+{% if include.competitions.size > 0 %}
 
   <ul class="ds-IncludesCompetitionsList">
-    {% for competition in competitions %}
+    {% for competition in include.competitions %}
       {% assign start = competition.start_date | date: "%b %-d" %}
       {% assign end = competition.end_date | date: "%-d" %}
       {% assign year = competition.end_date | date: "%Y" %}

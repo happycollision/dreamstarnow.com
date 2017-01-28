@@ -1,0 +1,12 @@
+{% assign unix_time = site.time | date: '%s' %}
+{% assign future_comps = "" | split: "|" %}
+{% assign past_comps = "" | split: "|" %}
+{% for comp in site.competitions %}
+  {% assign comp_date = comp.end_date | date: '%s' %}
+  {% if comp_date > unix_time %}
+    {% assign future_comps = future_comps | push: comp %}
+  {% else %}
+    {% assign past_comps = past_comps | push: comp %}
+  {% endif %}
+{% endfor %}
+
