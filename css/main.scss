@@ -18,9 +18,9 @@ $baseurl: "{{ site.baseurl }}";
   "main-nav",
 	"footer",
 	
-	"competitions_list",
-	"index",
-	"staff"
+	"includes_list-competitions",
+	"root_index",
+	"root_staff"
 ;
 
 .welcome-message-image {

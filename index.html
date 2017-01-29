@@ -3,23 +3,23 @@ layout: default
 ---
 <div class="ds-Index">
 
-  <h1>Dreamstar Dance Competitions and Classes</h1>
+  <div class="ds-Index-welcomeMessage">
+    <h1>Dreamstar Dance Competitions and Classes</h1>
+    
+    <img class="welcome-message-image"
+      src="{{ site.baseurl }}/images/DES14-Dancer.jpg"
+      alt="Dancer posing during competition" />
+    
+    {% capture welcome %}{% include_relative _welcome-message.md %}{% endcapture %}
+    {{ welcome | markdownify }}
+    
+    {% if site.data.registration.open %}
+      <div class="registration-call-to-action">
+        <a class="register" href="{{ site.data.registration.url }}">Register Now</a>
+      </div>
+    {% endif %}
+  </div>
   
-  <img class="welcome-message-image"
-    src="{{ site.baseurl }}/images/DES14-Dancer.jpg"
-    alt="Dancer posing during competition" />
-  
-  {% capture welcome %}{% include_relative _welcome-message.md %}{% endcapture %}
-  {{ welcome | markdownify }}
-
-  {% if site.data.registration.open %}
-    <div class="registration-call-to-action">
-      <a class="register" href="{{ site.data.registration.url }}">Register Now</a>
-    </div>
-  {% endif %}
-  
-  {% include all_competitions_list.html %}
-
   <div class="full">
     {% assign posts = site.posts | where:"featured","true" %}
     {% for post in posts %}
