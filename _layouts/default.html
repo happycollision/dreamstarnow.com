@@ -7,14 +7,15 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      {{ content }}
+    <div class="ds-LayoutsDefault-main">
+      <div class="ds-LayoutsDefault-pageContent">
+        {{ content }}
+      </div>
+      
+      <div class="ds-LayoutsDefault-competitionsList">
+        {% include all_competitions_list.html %}
+      </div>
     </div>
-
-    <div class="ds-LayoutsDefault-competitionsList">
-      {% include all_competitions_list.html %}
-    </div>
-
 
     {% include footer.html %}
 
