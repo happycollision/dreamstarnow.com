@@ -12,7 +12,7 @@
         {% capture range %}{{ start_day }} - {{ end_day }}{% endcapture %}
       {% endif %}
       <li class="ds-IncludesListCompetitions-competition">
-        <a href="{{ competition.url }}" class="ds-IncludesListCompetitions-title"> {{ competition.title }} </a>
+        <a href="{{ competition.url | prepend: site.baseurl }}" class="ds-IncludesListCompetitions-title"> {{ competition.title }} </a>
         <div class="ds-IncludesListCompetitions-dates">
           {{ month }} {{ range }}, {{ year }}
         </div>
