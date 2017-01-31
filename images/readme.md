@@ -1,0 +1,1 @@
+The header images that appear under the logo are cropped at an 11 to 4 ratio. Best to keep anything interesting on the left side.
