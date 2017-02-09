@@ -1,4 +1,5 @@
 .ds-LayoutsDefault-main
+  padding-bottom: $spacing-unit *2
   +breakpoint($large)
     display: flex
     justify-content: flex-end
@@ -12,7 +13,13 @@
     margin: 0
 
 .ds-LayoutsDefault-competitionsList
+  background-color: lighten($base-brand-color, 60)
+  padding: 3em 0
+  margin-bottom: $spacing-unit * -2 // counter the Default-main padding above
   +breakpoint($large)
+    background-color: transparent
+    padding: 0
     flex-basis: 33%
     margin-top: 2em
+    margin-bottom: 0
     padding-left: 1em

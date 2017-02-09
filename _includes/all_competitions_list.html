@@ -1,8 +1,15 @@
+{% include _get_future_and_past_comps.html %}
+
 <div class="ds-IncludesAllCompetitionsList">
-  {% include _get_future_and_past_comps.html %}
   <h2 class="ds-IncludesAllCompetitionsList-titleUpcoming">Upcoming Competitions</h2>
-  {% include _list_competitions.html competitions=future_comps %}
+  <div class="ds-IncludesAllCompetitionsList-upcomingList">
+    {% include _list_competitions.html competitions=future_comps %}
+  </div>
+  
+
   <h2 class="ds-IncludesAllCompetitionsList-titlePast">Past Competitions</h2>
-  {% include _list_competitions.html competitions=past_comps %}
+  <div class="ds-IncludesAllCompetitionsList-pastList">
+    {% include _list_competitions.html competitions=past_comps %}
+  </div>
 </div>
 

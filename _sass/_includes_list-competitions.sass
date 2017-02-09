@@ -1,12 +1,29 @@
 .ds-IncludesAllCompetitionsList
+  @extend %content-width
   font-size: 0.75em
   padding: 0 1em
   
-// .ds-IncludesAllCompetitionsList-titleUpcoming,
-// .ds-IncludesAllCompetitionsList-titlePast
+.ds-IncludesAllCompetitionsList-titleUpcoming,
+.ds-IncludesAllCompetitionsList-titlePast
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  
+.ds-IncludesAllCompetitionsList-pastList
+  columns: 220px 2
+  column-fill: auto
+  +breakpoint($large)
+    column-count: 1
 
 .ds-IncludesListCompetitions
   list-style: none
+  margin: 0
+  padding-left: 1em
+  padding-right: 2em
   
 .ds-IncludesListCompetitions-competition
   margin-top: 0.5em
+  max-width: 200px
+  display: flex
+  justify-content: space-between
+  +breakpoint($large)
+    max-width: 230px
