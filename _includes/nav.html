@@ -1,8 +1,9 @@
 <ul>
-  {% assign editable_pages_collection = site.collections | where: "label", "_editable_pages" | first %}
+  <li><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">Home</a></li>
 
   {% assign pages_list = "" | split: "|" %}
 
+  {% assign editable_pages_collection = site.collections | where: "label", "_editable_pages" | first %}
   {% for page in editable_pages_collection.docs %}
     {% assign pages_list = pages_list | push: page %}
   {% endfor %}
