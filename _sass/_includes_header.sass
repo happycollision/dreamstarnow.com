@@ -25,43 +25,43 @@
     background-color: $base-brand-color
     z-index: -2
   
-  .site-title 
+.ds-IncludesHeader-siteTitle
 
-    +breakpoint($medium)
-      display: block
-      float: left
-      margin: auto
-      width: 60%
-
-    img
-      width: 100%
-      max-width: 730px
-      display: block
-      margin: auto
-    
-    h1
-      display: block
-      display: none
-      color: #444
-      text-align: center
-      padding: 0.2em
-      font-size: $base-font-size
-      font-size: 2.6em
-      font-weight: 100
-      line-height: 1em
-      
-      +breakpoint($medium)
-        color: #fff
-        font-size: 4em
-        position: absolute
-        bottom: 0
-        right: 0
-      
-      +breakpoint($large)
-        font-size: 5em
-
-  .register-button
-    +button($base-brand-color, #fff)
-    font-weight: bold
-    letter-spacing: 0.05em
+  +breakpoint($medium)
+    display: block
+    float: left
     margin: auto
+    width: 60%
+
+  > img
+    width: 100%
+    max-width: 730px
+    display: block
+    margin: auto
+  
+  > h1
+    display: block
+    display: none
+    color: #444
+    text-align: center
+    padding: 0.2em
+    font-size: $base-font-size
+    font-size: 2.6em
+    font-weight: 100
+    line-height: 1em
+    
+    +breakpoint($medium)
+      color: #fff
+      font-size: 4em
+      position: absolute
+      bottom: 0
+      right: 0
+    
+    +breakpoint($large)
+      font-size: 5em
+
+.ds-IncludesHeader-registerButton
+  +button($base-brand-color, #fff)
+  font-weight: bold
+  letter-spacing: 0.05em
+  margin: auto
