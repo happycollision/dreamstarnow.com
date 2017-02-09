@@ -14,10 +14,10 @@ $baseurl: "{{ site.baseurl }}";
   
 	// individual liquid file styles
 	"layout-default",
-	"header",
   "main-nav",
 	"footer",
 	
+	"includes_header",
 	"includes_list-competitions",
 	"root_index",
 	"root_staff"
