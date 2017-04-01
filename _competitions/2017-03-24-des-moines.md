@@ -5,7 +5,7 @@ state: IA
 
 # competition title is derived from the file name,
 # or you can override it here
-title: 
+title:
 
 competition_address: |
   Indianola High School
@@ -21,3 +21,5 @@ hotel_phone: 515-287-7300
 
 discount_is_available: true
 ---
+
+Check back here a while after the competition to see the results!
