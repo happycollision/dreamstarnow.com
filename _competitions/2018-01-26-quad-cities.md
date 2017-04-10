@@ -23,4 +23,4 @@ discount_is_available: false
 # Anything below the *next* line will appear on the website.
 ---
 
-Register with the button above!
+Check back later to register!
