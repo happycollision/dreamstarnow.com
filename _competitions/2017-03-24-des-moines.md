@@ -22,4 +22,6 @@ hotel_phone: 515-287-7300
 discount_is_available: true
 ---
 
-Check back here a while after the competition to see the results!
+Have a look at our amazing contestants on facebook:
+
+- [Duets](https://www.facebook.com/pg/Dreamstarnow/photos/?tab=album&album_id=1448359161881622)
