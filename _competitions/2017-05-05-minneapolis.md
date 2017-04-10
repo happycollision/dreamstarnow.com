@@ -22,4 +22,4 @@ hotel_phone: 952-831-1012
 discount_is_available: true
 ---
 
-Check back here a while after the competition to see the results!
+This competition has been cancelled.
