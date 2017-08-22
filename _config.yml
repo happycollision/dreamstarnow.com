@@ -12,7 +12,7 @@ description: >
 
 # While at the testing domain
 url: "https://happycollision.github.io" # the base hostname & protocol for your site
-baseurl: "/dreamstarnow.com"
+baseurl: ""
 
 # Build settings
 style_version: 1 # for browser caching
