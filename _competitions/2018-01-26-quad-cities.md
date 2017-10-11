@@ -1,6 +1,6 @@
 ---
 ####### Remove the "published: false" line to publish successfully
-published: true
+published: false
 
 start_date: 2018-01-26
 end_date: 2018-01-28
