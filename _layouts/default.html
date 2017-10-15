@@ -7,11 +7,54 @@
 
     {% include header.html %}
 
+    <div class="notice">
+      <style>
+        .notice {
+          font-size: 0.85em;
+          padding: 1em;
+          max-width: 900px;
+          margin: auto;
+          background-color: #ffe8b0;
+        }
+        @media (min-width: 700px) {
+          .notice {
+            display: flex;
+          }
+          .notice > * {
+            margin: auto 3em;
+          }
+        }
+        .site-nav {
+          margin-bottom: 0;
+        }
+      </style>
+      <div>
+        <h2>
+          Dreamstar Productions, LLC is in transition.
+        </h2>
+        <p>
+          We are looking for new owners to continue the Dreamstar tradition of
+          family-oriented dance competitions for 2018. If you are interested in
+          this business opportunity, contact Tom Goodall for more information.
+        </p>
+        <p>
+          If your studio would like to participate in a 2018 Dreamstar competition,
+          contact Tom Goodall to have your contact information forwarded to the
+          new owners.
+        </p>
+      </div>
+      <p>
+        Tom’s contact information: <br/>
+        <a href="mailto:tom@dreamstarnow.com">tom@dreamstarnow.com</a><br/>
+        563-579-3678.
+      </p>
+    </div>
+
     <div class="ds-LayoutsDefault-main">
       <div class="ds-LayoutsDefault-pageContent">
         {{ content }}
       </div>
-      
+
       <div class="ds-LayoutsDefault-competitionsList">
         {% include all_competitions_list.html %}
       </div>
